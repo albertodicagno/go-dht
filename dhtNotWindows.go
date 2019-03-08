@@ -66,7 +66,7 @@ func (dht *DHT) readBits() ([]int, error) {
 	time.Sleep(time.Millisecond)
 
 	// send start high
-	err = dht.pin.In(gpio.PullUp, gpio.NoEdge)
+	err = dht.pin.In(gpio.Float, gpio.NoEdge)
 	if err != nil {
 		dht.pin.Out(gpio.High)
 		return nil, fmt.Errorf("pin in error: %v", err)

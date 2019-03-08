@@ -1,6 +1,7 @@
 # Go DHT22 / AM2302 / DHT11 interface
 
 Golang DHT22 / AM2302 / DHT11 interface using periph.io driver
+#### This fork doesn't pull any pin up, so you can use it with any device and pin, even if without software pullup/pulldown support.
 
 [![GoDoc Reference](https://godoc.org/github.com/MichaelS11/go-dht?status.svg)](http://godoc.org/github.com/MichaelS11/go-dht)
 [![Go Report Card](https://goreportcard.com/badge/github.com/MichaelS11/go-dht)](https://goreportcard.com/report/github.com/MichaelS11/go-dht)
